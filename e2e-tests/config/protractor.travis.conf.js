@@ -15,8 +15,8 @@ config.capabilities = {
         },
         device: 'local development machine',
         platform: {
-            name: 'osx',
-            version: '10.12.6'
+            name: 'windows 10',
+            version: ''
         }
     }
 };
