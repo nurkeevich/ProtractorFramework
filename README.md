@@ -123,21 +123,6 @@ See the [`example.steps.ts`](/e2e-tests/features/example.steps.ts) for the imple
 	  @example @happy-flow @angular @visitor @julie
 	  Scenario: As a visitor I want to be greeted
 	  ? Given I visit the Angular homepage
-	  ? Given I submit the name "Julie"
-	  ? Then I am greeted as "Hello Julie!"
-
-	  @example @happy-flow @angular @todo @count @validate
-	  Scenario: Validate todo list
-	  ? Given I visit the Angular homepage
-	  ? Given I count 2 todo's
-	  ? Then the last todo should hold "build an AngularJS app"
-
-	  @example @happy-flow @angular @todo @count @add
-	  Scenario: Add a todo
-	  ? Given I visit the Angular homepage
-	  ? Given I add the todo "write a protractor test"
-	  ? Then I should have 3 todo's
-	  ? And the last todo should hold "write a protractor test"
 
 	Warnings:
 
@@ -151,98 +136,9 @@ See the [`example.steps.ts`](/e2e-tests/features/example.steps.ts) for the imple
 	         callback(null, 'pending');
 	       });
 
-	2) Scenario: As a visitor I want to be greeted - e2e-tests/features/example.feature:8
-	   Step: Given I submit the name "Julie" - e2e-tests/features/example.feature:9
-	   Message:
-	     Undefined. Implement with the following snippet:
 
-	       Given('I submit the name {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	3) Scenario: As a visitor I want to be greeted - e2e-tests/features/example.feature:8
-	   Step: Then I am greeted as "Hello Julie!" - e2e-tests/features/example.feature:10
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Then('I am greeted as {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	4) Scenario: Validate todo list - e2e-tests/features/example.feature:13
-	   Step: Given I visit the Angular homepage - e2e-tests/features/example.feature:5
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Given('I visit the Angular homepage', function (callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	5) Scenario: Validate todo list - e2e-tests/features/example.feature:13
-	   Step: Given I count 2 todo's - e2e-tests/features/example.feature:14
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Given('I count {int} todo\'s', function (int, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	6) Scenario: Validate todo list - e2e-tests/features/example.feature:13
-	   Step: Then the last todo should hold "build an AngularJS app" - e2e-tests/features/example.feature:15
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Then('the last todo should hold {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	7) Scenario: Add a todo - e2e-tests/features/example.feature:18
-	   Step: Given I visit the Angular homepage - e2e-tests/features/example.feature:5
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Given('I visit the Angular homepage', function (callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	8) Scenario: Add a todo - e2e-tests/features/example.feature:18
-	   Step: Given I add the todo "write a protractor test" - e2e-tests/features/example.feature:19
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Given('I add the todo {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	9) Scenario: Add a todo - e2e-tests/features/example.feature:18
-	   Step: Then I should have 3 todo's - e2e-tests/features/example.feature:20
-	   Message:
-	     Undefined. Implement with the following snippet:
-
-	       Then('I should have {int} todo\'s', function (int, callback) {
-	         // Write code here that turns the phrase above into concrete actions
-	         callback(null, 'pending');
-	       });
-
-	10) Scenario: Add a todo - e2e-tests/features/example.feature:18
-	    Step: And the last todo should hold "write a protractor test" - e2e-tests/features/example.feature:21
-	    Message:
-	      Undefined. Implement with the following snippet:
-
-	        Then('the last todo should hold {stringInDoubleQuotes}', function (stringInDoubleQuotes, callback) {
-	          // Write code here that turns the phrase above into concrete actions
-	          callback(null, 'pending');
-	        });
-
-	3 scenarios (3 undefined)
-	10 steps (10 undefined)
+	3 scenarios (1 undefined)
+	10 steps (1 undefined)
 	0m00.002s
 	[08:18:54] I/launcher - 0 instance(s) of WebDriver still running
 	[08:18:54] I/launcher - chrome #01 passed
@@ -293,18 +189,8 @@ When e2e-tests succeed you will see the following
 	==============================================================================================
 	    Multiple Cucumber HTML report generated in:
 
-	    /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/.tmp/report/index.html
+	    /Users/User/protractor-cucumber-typescript-boilerplate/.tmp/report/index.html
 
 	    Tnx for using Multiple Cucumber HTML report
-
-	    Grtz wswebcreation
 	==============================================================================================
 
-
-# Contribution
-If you like to add some extra info, nice packages or have some improvements, feel free to add a PR.
-
-
-Grtz,
-
-wswebcreation
