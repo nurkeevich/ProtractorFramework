@@ -15,7 +15,7 @@ With this protractor-cucumber-typescript boilerplate you can easily start a test
 * no need to compile TypeScript testfiles before running
 * automatically making screenshots on failed steps (you can adjust the filename to whatever you want, it's just a simple setup)
 * **NEW:** an easy setup for using nice reporting provided by [protractor-multiple-cucumber-html-reporter-plugin](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin)
-* **NEW:** a configuration to automatically rerun flaky tests with [protractor-flake](https://github.com/NickTomlin/protractor-flake). This can be run with `npm run flake` and will check the logging for failed feature files before protractor exists
+* **NEW:** a configuration to automatically rerun flaky e2e-tests with [protractor-flake](https://github.com/NickTomlin/protractor-flake). This can be run with `npm run flake` and will check the logging for failed feature files before protractor exists
 
 It supports and provides:
 
@@ -38,19 +38,19 @@ And a lot more, see the [`package.json`](package.json)
 
 - do a `git clone` of this project
 - go to the root of the project and execute `npm install`
-- to get the tests running make sure you have a local `webdriver-manager` running (`directConnect` from protractor has some issues)
+- to get the e2e-tests running make sure you have a local `webdriver-manager` running (`directConnect` from protractor has some issues)
 
-Then there are 3 ways to run tests:
+Then there are 3 ways to run e2e-tests:
 
 1. Run 1 or multiple featurefiles. This can be done with `npm run e2e -- --feature=example` or `npm run e2e -- --feature= example,playground`. Only provide the name of the featurefile(s) without the `.feature`
 2. Run a specific tagged test(s) / featurefile(s). This can be done with `npm run e2e -- --tags=@tagName`. Please check the [docs](https://docs.cucumber.io/tag-expressions/) about how to use tags
 3. Run all the available featurefiles. This can be done with `npm run e2e`
 
-> **If you want to run tests and  nd after failure only rerun the failed ones, then use `npm run flake` to run it with `protractor-flake`**
+> **If you want to run e2e-tests and  nd after failure only rerun the failed ones, then use `npm run flake` to run it with `protractor-flake`**
 
 ### Implement it in your project
 Just copy this to your project. Copy all the `dev-dependencies` to your projects `package.json` and do a new `npm install` of your project.
-You can use whatever taksrunner you want to run the tests.
+You can use whatever taksrunner you want to run the e2e-tests.
 
 ## CucumberJS compiles on-the-fly
 With the provided setup in the [`protractor.shared.conf.js`](/e2e-tests/config/protractor.shared.conf.js) you don't need to compile the TypeScript files before you run them. It will be done automatically for you with the `compiler` in the `cucumberOpts`.
@@ -112,7 +112,7 @@ When there is a compile error it is thrown like below.
 	npm ERR!     /Users/wswebcreation/protractor-cucumber-typescript-boilerplate/npm-debug.log
 
 ## When you don't have a `*.steps` file
-When you created a `*.feature`-file you can start running the tests and it will throw an output like below.
+When you created a `*.feature`-file you can start running the e2e-tests and it will throw an output like below.
 See the [`example.steps.ts`](/e2e-tests/features/example.steps.ts) for the implementation.
 
 > Advice is not to use the `callback`'s, just use `promises`.
@@ -258,8 +258,8 @@ See the [`example.steps.ts`](/e2e-tests/features/example.steps.ts) for the imple
 	    Grtz wswebcreation
 	==============================================================================================
 
-## When tests succeed
-When tests succeed you will see the following
+## When e2e-tests succeed
+When e2e-tests succeed you will see the following
 
 	@example @happy-flow @angular
 	Feature: Angular homepage
