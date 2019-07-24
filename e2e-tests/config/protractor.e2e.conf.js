@@ -7,7 +7,8 @@ config.multiCapabilities = [
     {
         browserName: 'chrome',
         chromeOptions: {
-            args: ['disable-infobars']
+            args: ['disable-infobars'],
+            args: ['--no-sandbox']
         },
         shardTestFiles: true,
         maxInstances: 5,
