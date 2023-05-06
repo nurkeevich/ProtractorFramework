@@ -35,7 +35,7 @@
     "chai-as-promised": "^7.1.1",
     "cucumber": "~3.0.1",
     "fs-extra": "^4.0.1",
-    "protractor": "5.1.2",
+    "protractor": "5.4.4",
     "protractor-cucumber-framework": "~4.1.1",
     "protractor-flake": "^3.0.0",
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.1.0",
